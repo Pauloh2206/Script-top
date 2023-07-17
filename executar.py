@@ -57,12 +57,12 @@ def assustar():
     animar_texto("HAHAHAHA!", "red")
     
     # Download automático do arquivo de áudio
-    url = "https://raw.githubusercontent.com/Pauloh2206/Script-top/pypy.mp3"
+    url = "https://raw.githubusercontent.com/Pauloh2206/Script-top/pypy.WAV"
     response = requests.get(url)
-    with open("pypy.mp3", "wb") as arquivo:
+    with open("pypy.WAV", "wb") as arquivo:
         arquivo.write(response.content)
     
-    subprocess.run(["mpv", "pypy.mp3"])  # Reproduzir o áudio
+    subprocess.run(["mpv", "pypy.WAV"])  # Reproduzir o áudio
     
     time.sleep(2)
     animar_texto("HAHA! FOI SÓ UMA BRINCADEIRA!", "green")
